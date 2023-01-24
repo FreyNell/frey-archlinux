@@ -31,6 +31,8 @@ genfstab -U /mnt >> /mnt/etc/fstab
 
 arch-chroot
 
+systemctl enable NetworkManager
+
 ln -sf /usr/share/zoneinfo/America/Bogota /etc/localtime
 hwclock --systohc
 
