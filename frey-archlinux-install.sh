@@ -1,6 +1,8 @@
 loadkeys la-latin1
 timedatectl set-timezone America/Bogota
 
+exit 1; # prevent runing
+
 EFIPART= #/dev/sda2 300M
 SWAPPART= #/dev/sad3 4GB
 ARCHPART= #/dev/sda4 495GB
