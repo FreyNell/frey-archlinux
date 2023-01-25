@@ -1,0 +1,35 @@
+systemctl enable NetworkManager
+
+ln -sf /usr/share/zoneinfo/America/Bogota /etc/localtime
+hwclock --systohc
+
+sed -i 's/#es_CO/es_CO/' /etc/locale.gen
+
+locale-gen
+
+echo "LANG=es_CO.UTF-8" >> /etc/locale.conf
+echo "KEYMAP=la-latin1" >> /etc/vconsole.conf
+echo "ARCHFREY" >> /etc/hostname
+
+echo "Please create your ROOT user password"
+passwd
+
+grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=$GRUB_ENTRY
+
+sed -i 's/#GRUB_DISABLE_OS_PROBE/GRUB_DISABLE_OS_PROBE/' /etc/default/grub
+
+grub-mkconfig -o /boot/grub/grub.cfg
+
+useradd -m -s /bin/zsh freynell
+
+echo "Add password for freynell"
+passwd freynell
+
+sed -i 's/#ParallelDownloads/ParallelDownloads/' /etc/pacman.conf
+
+cp frey-archlinux-install.sh* /home/freynell/
+chown -R freynell:freynell /home/freynell
+echo "Don't Forget to Configure Sudoers file with visudo"
+
+exit 0
+

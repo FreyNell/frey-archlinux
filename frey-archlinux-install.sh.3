@@ -1,0 +1,25 @@
+cd ~
+xdg-user-dirs-update
+mkdir -p /home/freynell/.config/bspwm
+mkdir -p /home/freynell/.config/sxhkd
+install -Dm755 /usr/share/doc/bspwm/examples/bspwmrc /home/freynell/.config/bspwm/bspwmrc
+install -Dm644 /usr/share/doc/bspwm/examples/sxhkdrc /home/freynell/.config/sxhkd/sxhkdrc
+
+sudo localectl set-x11-keymap latam
+
+echo "Edit /home/freynell/.xinitrc"
+wget https://raw.githubusercontent.com/FreyNell/frey-archlinux/main/.xinitrc
+
+echo "Edit sxhkdrc configuration"
+wget https://raw.githubusercontent.com/FreyNell/frey-archlinux/main/.config/sxhkd/sxhkdrc -O /home/freynell/.config/sxhkd/sxhkdrc
+
+echo "Edit bspwmrc"
+wget https://raw.githubusercontent.com/FreyNell/frey-archlinux/main/.config/bspwm/bspwmrc -O /home/freynell/.config/bspwm/bspwmrc
+
+echo "Zprofile file is for run kitty and bspwm as soon as I log in."
+wget https://raw.githubusercontent.com/FreyNell/frey-archlinux/main/.zprofile
+
+echo "Install Oh My Zsh!"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+sudo pacman -S kitty
