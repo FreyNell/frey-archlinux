@@ -25,7 +25,8 @@ xf86-video-nouveau \
 networkmanager networkmanager-openvpn \
 neovim zsh sudo bitwarden-cli reflector htop xdg-user-dirs \
 bspwm sxhkd polybar firefox openssh git wget dmenu autorandr \
-mesa-utils vi kitty imagemagick pulseaudio pulseaudio-alsa 
+mesa-utils vi kitty imagemagick pulseaudio pulseaudio-alsa \
+xbindkeys
 
 genfstab -U /mnt >> /mnt/etc/fstab
 
