@@ -28,6 +28,5 @@ if [ -f "$usermodmap" ]; then
 fi
 
 
-sxhkd &
 kitty --detach
 exec bspwm
