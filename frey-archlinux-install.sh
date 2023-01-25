@@ -23,12 +23,12 @@ pacman -Sy
 pacstrap -K /mnt base linux linux-firmware \
 grub efibootmgr os-prober amd-ucode acpi \
 xorg xorg-xinit xorg-apps xorg-server libxkbcommon libxkbcommon-x11 \
-xf86-video-nouveau xf86-video-amdgpu \
+xf86-video-nouveau \
 networkmanager networkmanager-openvpn \
 neovim zsh sudo bitwarden-cli reflector htop xdg-user-dirs \
 bspwm sxhkd polybar firefox openssh git wget dmenu autorandr \
 alsa-utils alsa-plugins sof-firmware alsa-ucm-conf \
-nvidia-prime mesa-utils vi kitty
+mesa-utils vi kitty
 
 genfstab -U /mnt >> /mnt/etc/fstab
 
