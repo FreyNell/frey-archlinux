@@ -25,7 +25,7 @@ networkmanager networkmanager-openvpn \
 neovim zsh sudo bitwarden-cli reflector htop xdg-user-dirs \
 bspwm sxhkd polybar firefox openssh git wget dmenu autorandr \
 alsa-utils alsa-plugins sof-firmware alsa-ucm-conf \
-nvidia-prime
+nvidia-prime mesa-utils
 
 genfstab -U /mnt >> /mnt/etc/fstab
 
