@@ -1,10 +1,15 @@
 loadkeys la-latin1
 timedatectl set-timezone America/Bogota
 
-EFIPART=/dev/sda2 #/dev/sda2 300M
-SWAPPART=/dev/sda3 #/dev/sad3 4GB
-ARCHPART=/dev/sda4 #/dev/sda4 495GB
+
+echo "Configure your LSBLK disks partitions"
+exit 1;
+
+EFIPART= #/dev/sda2 300M
+SWAPPART= #/dev/sda3 4GB
+ARCHPART= #/dev/sda4 495GB
 GRUB_ENTRY=ARCHFREY
+
 
 mkfs.fat -F 32 $EFIPART
 mkswap $SWAPPART
