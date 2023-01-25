@@ -1,5 +1,5 @@
 cp ~/.zprofile .zprofile
 cp ~/.xinitrc .xinitrc
-cp ~/.config/bspwm/bspwmrc .config/bspwm/bspwmrc
-cp ~/.config/sxhkd/sxhkdrc .config/sxhkd/sxhkdrc
+cp -r ~/.config .
 cp ~/.zshrc .zshrc
+cp ~/frey-archlinux-install.s* .

@@ -1,15 +1,13 @@
 loadkeys la-latin1
 timedatectl set-timezone America/Bogota
 
-
-echo "Configure your LSBLK disks partitions"
+echo "Configure lsbkl disks"
 exit 1;
 
 EFIPART= #/dev/sda2 300M
 SWAPPART= #/dev/sda3 4GB
 ARCHPART= #/dev/sda4 495GB
 GRUB_ENTRY=ARCHFREY
-
 
 mkfs.fat -F 32 $EFIPART
 mkswap $SWAPPART
@@ -27,8 +25,7 @@ xf86-video-nouveau \
 networkmanager networkmanager-openvpn \
 neovim zsh sudo bitwarden-cli reflector htop xdg-user-dirs \
 bspwm sxhkd polybar firefox openssh git wget dmenu autorandr \
-alsa-utils alsa-plugins sof-firmware alsa-ucm-conf \
-mesa-utils vi kitty
+mesa-utils vi kitty imagemagick
 
 genfstab -U /mnt >> /mnt/etc/fstab
 
