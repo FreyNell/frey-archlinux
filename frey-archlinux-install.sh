@@ -18,14 +18,13 @@ swapon $SWAPPART
 
 pacman -Sy
 pacstrap -K /mnt base linux linux-firmware \
-xorg xorg-xinit xorg-apps xorg-server \
-nvidia nvidia-utils \
+grub efibootmgr os-prober amd-ucode acpi \
+xorg xorg-xinit xorg-apps xorg-server libxkbcommon libxkbcommon-x11 \
+xf86-video-nouveau xf86-video-amdgpu \
 networkmanager networkmanager-openvpn \
-vi vim \
-grub efibootmgros-prober amd-ucode \
-zsh sudo bitwarden-cli reflector htop bspwm sxhkd \
-polybar xdg-user-dirs firefox openssh git acpi \
-libxkbcommon libxkbcommon-x11 wget
+neovim zsh sudo bitwarden-cli reflector htop xdg-user-dirs \
+bspwm sxhkd polybar firefox openssh git wget dmenu autorandr \
+alsa-utils alsa-plugins sof-firmware alsa-ucm-conf
 
 genfstab -U /mnt >> /mnt/etc/fstab
 
