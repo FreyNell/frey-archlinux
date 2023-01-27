@@ -27,7 +27,7 @@ neovim zsh sudo bitwarden-cli reflector htop xdg-user-dirs \
 bspwm sxhkd polybar firefox openssh git wget dmenu autorandr \
 mesa-utils vi kitty imagemagick pulseaudio pulseaudio-alsa \
 xbindkeys ufw gufw hdparm ranger feh \
-lynis clamav clamtk
+lynis clamav clamtk rkhunter
 
 genfstab -U /mnt >> /mnt/etc/fstab
 
