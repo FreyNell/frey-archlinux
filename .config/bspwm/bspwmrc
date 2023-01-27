@@ -20,6 +20,7 @@ bspc config gapless_monocle      true
 bspc rule -a firefox desktop='^2' sate=fullscreen
 
 
-
+# prevent java windows errors.
+export _JAVA_AWT_WM_NONREPARENTING=1
 # launch polybar
 $HOME/.config/polybar/launch.sh

@@ -29,5 +29,5 @@ fi
 
 xbindkeys
 autorandr --change
-kitty --detach
+~/.fehbg &
 exec bspwm
