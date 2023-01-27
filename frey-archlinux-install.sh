@@ -23,7 +23,7 @@ grub efibootmgr os-prober amd-ucode acpi \
 xorg xorg-xinit xorg-apps xorg-server libxkbcommon libxkbcommon-x11 \
 xf86-video-nouveau \
 networkmanager networkmanager-openvpn \
-neovim zsh sudo bitwarden-cli reflector htop xdg-user-dirs \
+neovim zsh sudo bitwarden reflector htop xdg-user-dirs \
 bspwm sxhkd polybar firefox openssh git wget dmenu autorandr \
 mesa-utils vi kitty imagemagick pulseaudio pulseaudio-alsa \
 xbindkeys ufw gufw hdparm ranger feh \
