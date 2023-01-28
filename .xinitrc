@@ -30,4 +30,5 @@ fi
 xbindkeys
 autorandr --change
 ~/.fehbg &
+picom &
 exec bspwm
