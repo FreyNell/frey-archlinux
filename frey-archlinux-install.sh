@@ -17,7 +17,7 @@ mount $ARCHPART /mnt
 mount --mkdir $EFIPART /mnt/boot
 swapon $SWAPPART
 
-pacman -Sy
+pacman -Syu
 pacstrap -K /mnt base linux-zen linux-firmware \
 grub efibootmgr os-prober amd-ucode acpi \
 xorg xorg-xinit xorg-apps xorg-server libxkbcommon libxkbcommon-x11 \
