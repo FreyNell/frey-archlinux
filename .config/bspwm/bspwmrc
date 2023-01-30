@@ -17,7 +17,7 @@ bspc config gapless_monocle      true
 #bspc rule -a Kupfer.py focus=on
 #bspc rule -a Screenkey manage=off
 #
-bspc rule -a firefox desktop='^2' sate=fullscreen
+bspc rule -a firefox desktop='^2' state=fullscreen
 
 
 # prevent java windows errors.

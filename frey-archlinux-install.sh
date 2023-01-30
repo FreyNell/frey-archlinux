@@ -28,7 +28,7 @@ bspwm sxhkd polybar firefox openssh git wget dmenu autorandr \
 mesa-utils vi kitty imagemagick pulseaudio pulseaudio-alsa \
 xbindkeys ufw gufw hdparm ranger feh \
 lynis clamav clamtk rkhunter xclip picom \
-mpv flameshot
+mpv flameshot xorg-xclipboard
 
 genfstab -U /mnt >> /mnt/etc/fstab
 

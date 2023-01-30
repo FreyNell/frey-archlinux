@@ -54,6 +54,10 @@
 #""
 #   XF86AudioMicMute
 
+# Take Screenshots
+"flameshot gui -s -c"
+    Print
+
 ##################################
 # End of xbindkeys configuration #
 ##################################
