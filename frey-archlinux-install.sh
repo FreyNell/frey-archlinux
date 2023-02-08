@@ -25,7 +25,7 @@ xf86-video-nouveau \
 networkmanager networkmanager-openvpn \
 neovim zsh sudo bitwarden reflector htop xdg-user-dirs \
 bspwm sxhkd polybar firefox openssh git wget dmenu autorandr \
-mesa-utils vi kitty imagemagick pulseaudio pulseaudio-alsa \
+mesa-utils vi kitty imagemagick pipewire pipewire-alsa pipewire-pulse pamixer \
 xbindkeys ufw gufw hdparm ranger feh \
 lynis clamav clamtk rkhunter xclip picom \
 mpv flameshot xorg-xclipboard
