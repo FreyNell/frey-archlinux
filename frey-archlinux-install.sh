@@ -29,7 +29,7 @@ mesa-utils vi kitty imagemagick pipewire pipewire-alsa pipewire-pulse pamixer \
 xbindkeys ufw gufw hdparm ranger feh \
 lynis clamav clamtk rkhunter xclip picom \
 mpv flameshot xorg-xclipboard \
-easyeffects pavucontrol qpwgraph 
+easyeffects pavucontrol qpwgraph powertop 
 
 genfstab -U /mnt >> /mnt/etc/fstab
 
