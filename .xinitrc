@@ -31,4 +31,5 @@ xbindkeys
 autorandr --change
 ~/.fehbg &
 picom &
+flameshot & # in order to take screenshots
 exec bspwm

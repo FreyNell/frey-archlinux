@@ -55,7 +55,8 @@
 #   XF86AudioMicMute
 
 # Take Screenshots
-"flameshot gui -s -c | xclip -selection clipboard -t image/png"
+#"flameshot gui -s -c | xclip -selection clipboard -t image/png"
+"flameshot gui -s -c | copyq MIME DATA"
     Print
 
 ##################################

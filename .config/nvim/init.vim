@@ -4,6 +4,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'preservim/nerdtree'
   Plug 'pineapplegiant/spaceduck', { 'branch': 'main' }
   Plug 'sheerun/vim-polyglot'
+  Plug 'ryanoasis/vim-devicons'
 call plug#end()
 
 " we will add keybinds below this comment.
@@ -23,3 +24,8 @@ if exists('+termguicolors')
 endif
 
 colorscheme spaceduck
+
+
+""Configure fonts
+set encoding=UTF-8
+set guifont=Hack\ Nerd\ Font\ 11
