@@ -18,7 +18,7 @@ bspc config gapless_monocle      true
 #bspc rule -a Screenkey manage=off
 #
 bspc rule -a firefox desktop='^2' state=fullscreen
-
+bspc rule -a ek8s desktop='^3' state=fullscreen
 
 # prevent java windows errors.
 export _JAVA_AWT_WM_NONREPARENTING=1

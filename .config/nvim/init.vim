@@ -11,6 +11,12 @@ call plug#begin('~/.vim/plugged')
 
 call plug#end()
 
+" SHORTCUTS FREY
+set number
+set clipboard+=unnamedplus
+set shiftwidth=4
+set tabstop=4
+
 " Find files using Telescope command-line sugar.
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
