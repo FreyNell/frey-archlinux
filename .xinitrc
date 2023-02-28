@@ -32,4 +32,5 @@ autorandr --change
 ~/.fehbg &
 picom &
 flameshot & # in order to take screenshots
+dunst &
 exec bspwm

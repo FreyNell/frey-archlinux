@@ -39,15 +39,15 @@
 
 #COMMANDS
 # Increase volume
-"pamixer -i 5"
+"pamixer -i 5 && ~/.config/dunst/dunst_notification_scripts/volume.sh"
    XF86AudioRaiseVolume
 
 # Decrease volume
-"pamixer -d 5"
+"pamixer -d 5 && ~/.config/dunst/dunst_notification_scripts/volume.sh"
    XF86AudioLowerVolume
 
 # Mute volume
-"pamixer -t"
+"pamixer -t && ~/.config/dunst/dunst_notification_scripts/volume.sh"
    XF86AudioMute
 
 # Mute microphone
